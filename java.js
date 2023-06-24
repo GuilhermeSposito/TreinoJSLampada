@@ -6,15 +6,15 @@ function acender(){
     div.innerHTML=''
 
     let img = document.createElement('img')
-    img.setAttribute('src' , 'lampada (1).png')
+    img.setAttribute('src' , 'lampada.png')
 
     div.appendChild(img)
 
-    document.body.style.backgroundColor = 'black'
+    document.body.style.backgroundColor = 'rgb(44, 44, 44)'
 
     let inputNovo = document.createElement('input')
     inputNovo.setAttribute('type' , 'button')
-    inputNovo.setAttribute('value' , 'Apagar')
+    inputNovo.setAttribute('value' , 'Acender')
     inputNovo.style.backgroundColor = 'white'
     inputNovo.style.color = 'black'
 
@@ -27,11 +27,11 @@ function acender(){
         document.body.style.backgroundColor = 'white'
 
         
-        img.setAttribute('src' , 'lampada.png')
+        img.setAttribute('src' , 'lampada (1).png')
 
         div.appendChild(img)
 
-        inputNovo.setAttribute('value' , 'acender')
+        inputNovo.setAttribute('value' , 'Apagar')
         inputNovo.style.backgroundColor = 'black'
         inputNovo.style.color = 'white'
         inputNovo.addEventListener('click' , acender) 
